@@ -41,6 +41,8 @@ Same way check you have 1Mhz here:
 Test the read port is correct doing like in the following picture (you need a digital test probe):
 ![read](/cdx-2-iface2.4/pictures/IMG_20230218_1654045.jpg)
 You can use the same program (push ctrl-breack and RUN) for test writing port selection too (with the probe pin inserted at pin 2).
+Look at this video:
+[![YouTube link](https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/pictures/IMG_20230218_1652428.jpg)](https://youtu.be/hXyXDxHcx18)
 After that you can also probe the hex D4 port that way:
 ![D4](/cdx-2-iface2.4/pictures/IMG_20230218_1746467.jpg)
 Now you must configure the jumpers JP1 to JP4 for the right drive&wire
@@ -57,15 +59,4 @@ Then, insert all pending chips, verify the D4 signals go to the pin they are exp
 Angesia ROM would be the better driver to load when testing and FAST!DiskROM will be used for better performance.
 
 There's more information on the TMS2793 datasheet.
-
-
-
-
-
-![CDX-2](/cdx-2-iface2.4/pictures/IMG_20230217_1639012.jpg )
-
-### Look at YouTube:
-[![YouTube link](https://youtu.be/hXyXDxHcx18)](https://youtu.be/hXyXDxHcx18)
-
-[![YouTube link](https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/pictures/IMG_20230218_1652428.jpg)](https://youtu.be/hXyXDxHcx18)
-[![YouTube link](https://img.youtube.com/vi/UTZCwYuuAXE/0.jpg)](https://www.youtube.com/watch?v=UTZCwYuuAXE)
+https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/doc/tms2793.pdf
