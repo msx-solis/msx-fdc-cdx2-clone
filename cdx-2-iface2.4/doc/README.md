@@ -38,7 +38,7 @@ Then follow the next steps.
 
 
 
-![CDX-2](/photos/cdx-2_03s.jpg)
+![CDX-2](/msx-fdc-cdx2-clone/cdx-2-iface2.4/pictures/IMG_20230217_1639012.jpg )
 
 ### Look at YouTube:
 [![YouTube link](https://img.youtube.com/vi/UTZCwYuuAXE/0.jpg)](https://www.youtube.com/watch?v=UTZCwYuuAXE)
