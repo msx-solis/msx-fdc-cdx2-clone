@@ -1,14 +1,9 @@
 # Step by step debugging instructions
 ## Port Based Floppy Disk Drive controller for MSX computer
 
-Recreated Microsol Tecnologia CDX-2 FDD interface.
 
-* Based on WD2793 or TMS2793 floppy disk controller
-* Support for 3.5' and 5.25' floppy drives
-* Modified to work with computers that support the BUSDIR signal
-* Jumper to switch between two different ROMs
-* Fits MSX cartridge
-* Tested on MSX1 and MSX2
+
+Recreated Microsol Tecnologia CDX-2 FDD interface with busdir signal upgrade.
 
 ### ROMs tested with this interface:
 
@@ -37,13 +32,11 @@ Recreated Microsol Tecnologia CDX-2 FDD interface.
 | TPX 1.02 (TPX - Perifericos)  | 23430  |
 | FAST!DiskROM  | 25471  |
 
-#### Test Points
+Build all components using sockets, round pin sockets should have low profile on this design.
+Then follow the next steps.
 
-- TP1 - PIN 16 (DIRC)
-- TP2 - PIN 29 (TG43)
-- TP3 - PIN 31 (WD)
 
-J3 must be closed to enable test mode. For normal use J3 must be **open.**
+
 
 ![CDX-2](/photos/cdx-2_03s.jpg)
 
