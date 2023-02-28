@@ -34,9 +34,9 @@ Recreated Microsol Tecnologia CDX-2 FDD interface with busdir signal upgrade.
 
 Build all components using sockets, round pin sockets should have low profile on this design.
 Then follow the next steps.
-First verify you have 4Mhz measuring here (you need frequency-meter or oscilloscope):
+First verify you have 4Mhz measuring here (you need a frequency-meter or an oscilloscope):
 ![4Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1133025.jpg)
-Then 1Mhz here:
+Same way check you have 1Mhz here:
 ![1Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1330519.jpg)
 Test the read port is correct doing like in the following picture (you need a digital test probe):
 ![read](/cdx-2-iface2.4/pictures/IMG_20230218_1654045.jpg)
