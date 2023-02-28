@@ -62,17 +62,10 @@ There's more information on the TMS2793 datasheet.
 
 
 
-
-
-
-[![YouTube link](/cdx-2-iface2.4/pictures/IMG_20230217_1639012.jpg)]([https://www.youtube.com/watch?v=UTZCwYuuAXE](https://youtu.be/hXyXDxHcx18))
-
-
-
-
 ![CDX-2](/cdx-2-iface2.4/pictures/IMG_20230217_1639012.jpg )
 
 ### Look at YouTube:
 [![YouTube link](https://youtu.be/hXyXDxHcx18)](https://youtu.be/hXyXDxHcx18)
 
+[![YouTube link](https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/pictures/IMG_20230218_1652428.jpg)](https://youtu.be/hXyXDxHcx18)
 [![YouTube link](https://img.youtube.com/vi/UTZCwYuuAXE/0.jpg)](https://www.youtube.com/watch?v=UTZCwYuuAXE)
