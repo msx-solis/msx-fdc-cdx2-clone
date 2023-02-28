@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "msx2proto-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/msx2proto-eagle-import.lib")(options "")(descr ""))
+  (lib (name "microsol-CDX2-rescue")(type "Legacy")(uri "${KIPRJMOD}/microsol-CDX2-rescue.lib")(options "")(descr ""))
+)

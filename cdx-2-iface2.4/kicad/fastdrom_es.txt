@@ -1,0 +1,95 @@
+FAST!DiskROM para interfaces CDX-2 estándar
+(c) Software A&L de 2005
+http://www.alsoftware.com.br/adrianpage
+
+
+Esta es una ROM para reemplazar las interfaces de disco originales con puertos producidos en Brasil. La ROM se proporciona en los formatos necesarios para escribirse directamente en la EPROM del controlador. Esta ROM también se puede usar en emuladores, siempre que emule las interfaces estándar de CDX-2.
+
+Esta ROM se creó desde cero, no solo como un parche en la ROM original de cualquier controlador de disco.
+Esta ROM se puede copiar y escribir libremente sin restricciones.
+Este software se proporciona "tal cual" y ni A&L Software ni el autor, Adriano Cunha, asumen responsabilidad alguna por cualquier tipo de uso o problemas que puedan ocurrir como resultado del uso del software.
+
+Las interfaces de unidad admitidas son:
+-Microsol (CDX2)
+-DDX 1.0
+-DDX 1.2
+-Liftron 2.7
+-todas las series DDX 3.0
+-DMX 1.2
+
+ATENCIÓN: use el archivo correspondiente a la interfaz de la unidad que tiene para reemplazar la ROM, de lo contrario NO FUNCIONARÁ. En caso de duda, consulte a su técnico de hardware MSX más cercano. Si necesita la ROM de la interfaz de la unidad original, vaya al sitio web de MSXPro: http://www.msxpro.com.
+1. Medios magnéticos compatibles (disquetes)
+180 KB (disco de 5 1/4", una cara), 360 KB (disco de 5 1/4", doble cara), 360 KB (disco de 3 1/2", una cara) y 720 KB (disco de 3 1/2", doble cara).
+
+2. Velocidad de acceso
+
+Esta ROM ha optimizado las rutinas de acceso a la unidad, lo que da como resultado las siguientes velocidades:
+
+- hasta 20 KB/s para lectura*
+- hasta 20 KB/s para grabación**
+- formatear un disco de 720 KB en 68 s (360 KB en 35 s);
+
+* Medida obtenida en MSX1, 3,5 MHz, MSXDOS1, disco de 3 1/2" 720 KB. Este valor puede verse afectado por una serie de factores.
+* Medida obtenida en MSX1, 3.5MHz, MSXDOS1, disco 3 1/2" 720KB. Este valor puede verse influenciado por una serie de factores. Si se utiliza la opción "VERIFY ON" (activada por defecto) la velocidad baja a la mitad , porque para cada operación de escritura, se realiza una operación de lectura y una comparación de los datos registrados.
+
+Como medida de comparación, las velocidades de las operaciones anteriores en otras interfaces de unidades son las siguientes:
+
+Formato de interfaz de lectura/escritura 720 KB
+
+Brasileño: 	Máximo 5KB/s 		255s
+Importado: 	cerca de 10 KB/s 	130 s
+Rápido (CIEL):	máximo 20 KB/s		68 s
+
+Precisamente porque esta ROM tiene rutinas de acceso a la unidad optimizadas, el uso de turbo tiene poca influencia en las velocidades obtenidas, ya que representa el límite del controlador utilizado en las interfaces.
+
+3. Compatibilidad
+
+A diferencia de las interfaces brasileñas, esta ROM tiene compatibilidad total con MSXDOS2 y con el estándar MSX, e incluso puede usarse junto con interfaces IDE o SCSI y en máquinas MSX2, 2+ o Turbo-R sin conflictos.
+ATENCIÓN: esta ROM no soluciona el problema de no poder utilizar interfaces port drive en el Turbo-R GT. Este es un problema que solo se puede resolver con hardware, no con software.
+
+4. Sistema operativo y arranque
+
+Los disquetes formateados por esta ROM tienen un arranque compatible con MSXDOS2. El Arranque también favorece la carga de SOLXDOS.SIS de Microsol sobre MSXDOS.SYS, si está presente en el disco.
+En otras palabras:
+- si el archivo MSXDOS2.SYS se encuentra en el disco y MSXDOS2 está activo en el sistema, se cargará y ejecutará;
+- de lo contrario, si el archivo SOLXDOS.SIS se encuentra en el disco, se cargará y ejecutará;
+- de lo contrario, si el archivo MSXDOS.SYS se encuentra en el disco, se cargará y ejecutará;
+- si no se encuentra ninguno de los tres archivos, se activa el intérprete BASIC;
+Al volver a DOS usando el comando CALL SYSTEM de BASIC, si no hay MSXDOS2.SYS, SOLXDOS.SIS o MSXDOS.SYS en el disco, se muestra un mensaje de error y se llama al intérprete BASIC.
+
+5. Soporte para más de una unidad
+
+Esta ROM puede controlar hasta 4 unidades en la misma interfaz. Una observación importante a realizar es que los accionamientos son detectados y añadidos al sistema independientemente de que las señales DS asociadas a los mismos estén en secuencia o no, pero respetando su orden.
+Por ejemplo, si la interfaz solo tiene una unidad conectada, ya sea en DS0, DS1, DS2 o DS3, se agregará al sistema como la primera unidad (A: si no hay otra interfaz de unidad). Esto hace posible utilizar unidades de PC configuradas de fábrica con la señal DS1 como unidad A: (si no hay otra interfaz de unidad en el sistema) sin tener que cambiar el hardware. Si la interfaz tiene dos unidades conectadas, la primera en DS0 y la segunda en DS2, estas se agregarán al sistema, respectivamente, como la primera y la segunda unidad física (A: y C: si no hay otra interfaz de unidad). y no se presionó la tecla CONTROL al iniciar la computadora; A: y B: si no hay otra interfaz de unidad y se presionó la tecla CONTROL al iniciar la computadora).
+
+
+6. Verificación de disquete
+
+Esta ROM contiene internamente un nuevo comando para verificar disquetes y marcar grupos defectuosos en ellos. Esta funcionalidad se activa a través del comando BÁSICO "CALL CHKDSK". Después de que el usuario informa que la unidad debe verificarse, se analiza el disquete y se marcan los clústeres defectuosos para evitar su uso futuro. Al final del proceso, se informa al usuario del resultado de la operación (disco sin problemas o número de clústeres defectuosos encontrados y marcados).
+A diferencia de otros programas de comprobación de discos de MSX,
+El proceso de marcado de clústeres defectuosos mediante el comando CHKDSK se realiza de forma compatible con el estándar FAT12, asegurando la ausencia de conflictos con otras herramientas del mismo tipo en IBM-PC y otras (por ejemplo, SCANDISK de Microsoft).
+
+7. Formateo
+
+A diferencia de las opciones de formateo disponibles en las interfaces de disco brasileñas, esta ROM ofrece dos grupos de formateo: con intercalado 1:1 (predeterminado) y con intercalado 2:1. Todos los medios compatibles con la ROM se pueden formatear en ambos intercalados. Los discos con formato Interleave 2 pueden tener acceso de lectura/escritura hasta un 33 % más rápido.
+ATENCIÓN: formatear discos en interleave 2 solo está justificado para MSX1 a 3.57MHz con DOS1. Usar interleave 2 con DOS2, turbo o incluso leer en IBM-PC hace que el acceso sea más lento. Solo use esta opción si está seguro de esta necesidad, ya que se recomienda usar el intercalado 1.
+ATENCIÓN: Formatear un disco no verifica que esté libre de errores, por lo que se recomienda utilizar el comando "CALL CHKDSK"
+después de esta operación.
+
+8. Memoria libre y tecla CONTROL en el arranque
+
+Mediante el uso de técnicas agresivas de gestión de memoria y buffers de disco, esta ROM, totalmente consistente con el estándar MSX, permite una memoria libre mínima en BASIC de unos 25400 bytes, independientemente del número de unidades e interfaces presentes en el sistema, si es que lo tiene. es el primero. Por este motivo, pulsar la tecla CONTROL en el arranque del MSX no aumentará significativamente este valor, teniendo como única función eliminar la "unidad fantasma" que está asociada a cada primera unidad física de cada interfaz de unidad.
+
+9. Simulador de reloj
+
+En el caso de máquinas MSX que no dispongan de reloj en tiempo real, como MSX1, esta ROM añade un reloj simulado al sistema. La hora siempre se inicializa a 00:00:00 desde el inicio del sistema y se puede cambiar normalmente usando el comando TIME en SOLXDOS o MSXDOS.
+ATENCIÓN: al ser un reloj simulado por software y basado en
+interrupción del procesador de video (50 o 60 Hz), se retrasa
+durante el acceso al disco o por programas que deliberadamente
+desactivar las interrupciones del sistema.
+
+10. Otras características/funcionalidades añadidas
+
+- rápida inicialización de la interfaz;
+- soporte para múltiples interfaces DDX3.0 en el mismo sistema; 
+
