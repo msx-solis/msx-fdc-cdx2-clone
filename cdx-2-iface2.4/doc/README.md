@@ -73,6 +73,6 @@ There's more information on the TMS2793 datasheet.
 ![CDX-2](/cdx-2-iface2.4/pictures/IMG_20230217_1639012.jpg )
 
 ### Look at YouTube:
-[![YouTube link]]((https://youtu.be/hXyXDxHcx18))
+[![YouTube link](https://youtu.be/hXyXDxHcx18)
 
 [![YouTube link](https://img.youtube.com/vi/UTZCwYuuAXE/0.jpg)](https://www.youtube.com/watch?v=UTZCwYuuAXE)
