@@ -40,7 +40,7 @@ Same way check you have 1Mhz here:
 ![1Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1330519.jpg)
 Test the read port is correct doing like in the following picture (you need a digital test probe):
 ![read](/cdx-2-iface2.4/pictures/IMG_20230218_1654045.jpg)
-You can use the same program (push ctrl-breack and RUN) for test writing port selection too (with the probe pin inserted at pin 2).
+You can use the same program (push ctrl-stop and RUN) for test writing port selection too (with the probe pin inserted at pin 2).
 Look at this video:
 [![YouTube link](https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/pictures/IMG_20230218_1652428.jpg)](https://youtu.be/hXyXDxHcx18)
 After that you can also probe the hex D4 port that way:
