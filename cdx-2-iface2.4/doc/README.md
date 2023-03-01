@@ -53,8 +53,8 @@ Now you must configure the jumpers JP1 to JP4 for the right drive&wire
 
 Then test output commands (DS0 on, DS1, motor on...) check the schematic to know what are the right bits:
 ![binary1](/cdx-2-iface2.4/pictures/IMG_20230218_1757110.jpg)
-or...
- ![binary2](/cdx-2-iface2.4/pictures/IMG_20230218_1757378.jpg)
+or you can connect the floppy drive and test it.
+ ![binary2](/cdx-2-iface2.4/pictures/IMG_20230218_1803597.jpg)
 Then, insert all pending chips, verify the D4 signals go to the pin they are expected and try with a disk drive.
 Angesia ROM would be the better driver to load when testing and FAST!DiskROM will be used for better performance.
 
