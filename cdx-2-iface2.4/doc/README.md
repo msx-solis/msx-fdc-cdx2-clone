@@ -40,9 +40,9 @@ First insert the 74LS0 and verify you have 4Mhz measuring here (you need a frequ
 ![4Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1133025.jpg)
 Same way you can insert the 74LS74 IC and test you have 1Mhz here:
 ![1Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1330519.jpg)
-Test the read port is correct doing like in the following picture (you need a digital test probe):
+Then test the reading select circuit is working properly doing the test shown in the following picture (and testing the result with a logic probe or a voltmeter):
 ![read](/cdx-2-iface2.4/pictures/IMG_20230218_1654045.jpg)
-You can use the same program (push ctrl-stop and RUN) for test writing port selection too (with the probe pin inserted at pin 2).
+You can use the same program (push ctrl-stop and RUN) for test writing port select circuit too (with the probe pin inserted at pin 2).
 Look at this video:
 [![YouTube link](https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/pictures/IMG_20230218_1652428.jpg)](https://youtu.be/hXyXDxHcx18)
 After that you can also probe the hex D4 port that way:
