@@ -43,22 +43,22 @@ Same way you can insert the 74LS74 IC and test you have 1Mhz here:
 Then test the reading select circuit is working properly doing the test shown in the following picture (and testing the result with a logic probe or a voltmeter):
 ![read](/cdx-2-iface2.4/pictures/IMG_20230218_1654045.jpg)
 You can use the same program (push ctrl-stop and RUN) for test writing port select circuit too (with the probe pin inserted at pin 2).
-Look at this video:
+Look at this video (click on the picture to see it):
 [![YouTube link](https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/pictures/IMG_20230218_1652428.jpg)](https://youtu.be/hXyXDxHcx18)
-After that you can also probe the hex D4 port that way:
+After that you can also probe the hex D4 port with the following procedure:
 ![D4](/cdx-2-iface2.4/pictures/IMG_20230218_1746467.jpg)
-Now you must configure the jumpers JP1 to JP4 for the right drive&wire
+Now you must configure the jumpers JP1 to JP4 for the right drive and the right wire:
 
-* To use MSX DS0 FDD and flat ribbon cable choose 1-2.
-* To use PC DS1 FDD and PC twisted (10 to 16 wires) select 2-3 at those jumpers.
-* PC drives can also be used with an MSX setup and 10 to 12 twisted wire.
+* To use an old DS0 MSX drive, build a direct straight ribbon cable and choose 1-2 at four jumpers.
+* To use a common DS1 PC drive and a ribbon PC twisted cable (with 10 to 16 wires crossed) chose 2-3 at those jumpers (only drive A will work).
+* The common PC drives can also be used with an MSX setup and 10 to 12 twisted wire then select jumpers at 1-2 and you would connect two PC drives: direct straight is drive B: and crossing 10-12 will be A:.
 
-Then test output commands (DS0 on, DS1, motor on...) check the schematic to know what are the right bits:
+Now try the following output commands (to test DS0 ON, DS1 ON, motor ON...) and test on the related pins. to know what should be the affected pin you must follow the schematic...
 ![binary1](/cdx-2-iface2.4/pictures/IMG_20230218_1757110.jpg)
-or you can connect the floppy drive and test it.
+...or you can connect now the floppy drive and test it. &b00100001 should on the A drive led, there's also bits for motor, etc:
  ![binary2](/cdx-2-iface2.4/pictures/IMG_20230218_1803597.jpg)
-Then, insert all pending chips, verify the D4 signals go to the pin they are expected and try with a disk drive.
-Angesia ROM would be the better driver to load when testing and FAST!DiskROM will be used for better performance.
+Then, insert all pending IC and configure the JP5 to select your favorite ROM driver and try with a disk drive.
+Angesia ROM would be the better driver to use during the test process and FAST!DiskROM will be better option to improve the performance.
 
-There's more information on the TMS2793 datasheet.
+There's also lots of information on the TMS2793 datasheet.
 https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/doc/tms2793.pdf
