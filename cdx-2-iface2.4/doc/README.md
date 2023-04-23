@@ -33,7 +33,9 @@ Recreated Microsol Tecnologia CDX-2 FDD interface with busdir signal upgrade.
 | FAST!DiskROM  | 25471  |
 
 Build all components using sockets, round pin sockets should have low profile on this design.
+
 Then follow the next steps.
+
 First verify you have 4Mhz measuring here (you need a frequency-meter or an oscilloscope):
 ![4Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1133025.jpg)
 Same way check you have 1Mhz here:
