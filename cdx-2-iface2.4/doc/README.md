@@ -49,9 +49,9 @@ After that you can also probe the hex D4 port that way:
 ![D4](/cdx-2-iface2.4/pictures/IMG_20230218_1746467.jpg)
 Now you must configure the jumpers JP1 to JP4 for the right drive&wire
 
-*To use MSX DS0 FDD and flat ribbon cable choose 1-2.
-*To use PC DS1 FDD and PC twisted (10 to 16 wires) select 2-3 at those jumpers.
-*PC drives can also be used with an MSX setup and 10 to 12 twisted wire.
+# *To use MSX DS0 FDD and flat ribbon cable choose 1-2.
+# *To use PC DS1 FDD and PC twisted (10 to 16 wires) select 2-3 at those jumpers.
+# *PC drives can also be used with an MSX setup and 10 to 12 twisted wire.
 
 Then test output commands (DS0 on, DS1, motor on...) check the schematic to know what are the right bits:
 ![binary1](/cdx-2-iface2.4/pictures/IMG_20230218_1757110.jpg)
