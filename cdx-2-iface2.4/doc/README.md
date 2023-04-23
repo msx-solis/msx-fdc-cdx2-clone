@@ -32,13 +32,13 @@ Recreated Microsol Tecnologia CDX-2 FDD interface with busdir signal upgrade.
 | TPX 1.02 (TPX - Perifericos)  | 23430  |
 | FAST!DiskROM  | 25471  |
 
-Build all components using sockets, round pin sockets should have low profile on this design.
+Solder in all components and sockets, using round pin sockets you should have a low profile design.
 
-Then follow the next steps.
+Then follow the next testing steps.
 
-First verify you have 4Mhz measuring here (you need a frequency-meter or an oscilloscope):
+First insert the 74LS0 and verify you have 4Mhz measuring here (you need a frequency-meter or an oscilloscope):
 ![4Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1133025.jpg)
-Same way check you have 1Mhz here:
+Same way you can insert the 74LS74 IC and test you have 1Mhz here:
 ![1Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1330519.jpg)
 Test the read port is correct doing like in the following picture (you need a digital test probe):
 ![read](/cdx-2-iface2.4/pictures/IMG_20230218_1654045.jpg)
