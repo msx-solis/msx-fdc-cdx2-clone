@@ -50,16 +50,22 @@ After that you can also probe the hex D4 port with the following procedure:
 ![D4](/cdx-2-iface2.4/pictures/IMG_20230218_1746467.jpg)
 Now you must configure the jumpers JP1 to JP4 for the right drive and the right wire:
 
-* To use an old DS0 MSX drive, build a direct straight ribbon cable and choose 1-2 at four jumpers.
+* To use an old DS0 MSX drive, build a direct straight ribbon cable and choose 1-2 at four jumpers. Direct straight drive connected will be A: and switching wires 10-12 drive B: DS0 (MSX) can be connected.
 * To use a common DS1 PC drive and a ribbon PC twisted cable (with 10 to 16 wires crossed) chose 2-3 at those jumpers (only drive A will work).
-* The common PC drives can also be used with an MSX setup and 10 to 12 twisted wire then select jumpers at 1-2 and you would connect two PC drives: direct straight is drive B: and crossing 10-12 will be A:.
+* PC drives can also be used with an MSX setup, with a 10 to 12 ribbon twisted wire. For this setup move jumpers JP1-JP4 to 1-2 and connect two PC drives: direct straight will be drive B: and drive connected after switching 10-12 will be drive A:.
+* Some drives also lets you choose what DS setup they are by jumpers, then use a direct straight ribbon cable with up to 5 connectors (4 drives) and setup each drive from DS0 to DS3.
 
 Now try the following output commands (to test DS0 ON, DS1 ON, motor ON...) and test on the related pins. to know what should be the affected pin you must follow the schematic...
 ![binary1](/cdx-2-iface2.4/pictures/IMG_20230218_1757110.jpg)
 ...or you can connect now the floppy drive and test it. &b00100001 should on the A drive led, there's also bits for motor, etc:
  ![binary2](/cdx-2-iface2.4/pictures/IMG_20230218_1803597.jpg)
 Then, insert all pending IC and configure the JP5 to select your favorite ROM driver and try with a disk drive.
-Angesia ROM would be the better driver to use during the test process and FAST!DiskROM will be better option to improve the performance.
+Angesia ROM would be the better software to use during the test process and FAST!DiskROM could be better option to improve the disk performance.
 
-There's also lots of information on the TMS2793 datasheet.
+Floppy disk support must be formatted at the right format, MSX system does not support High density disks.
+This means 3.5 HD disks must be formated after bloking the HD hole, using 720k/360k format (DSDD 80/40 tracks), and 5.25" disks must be also setup for 360k.
+You can use a tool from a PC to dump MSX disks, is called Disk Manager: http://www.lexlechz.at/en/software/DiskMgr.html
+Then you can use the disk dumps fount at https://download.file-hunter.com/ and get access to lots of software/games.
+
+There's also lots of information for troubleshooting this interface reading the TMS2793 datasheet.
 https://github.com/msx-solis/msx-fdc-cdx2-clone/raw/main/cdx-2-iface2.4/doc/tms2793.pdf
