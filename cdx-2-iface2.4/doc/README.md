@@ -33,6 +33,7 @@ Recreated Microsol Tecnologia CDX-2 FDD interface with busdir signal upgrade.
 | FAST!DiskROM  | 25471  |
 
 Solder in all components and sockets, using round pin sockets you should have a low profile design.
+The Jumpers muts be configured 1-2 for standard MSX connection or 2-3 for to use a standard PC ribbon cable, but drive b: may not work in this case (test not done yet).
 
 Then follow the next testing steps.
 
