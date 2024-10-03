@@ -37,7 +37,7 @@ The Jumpers JP1 to JP4 should link 1-2 for standard MSX connection and 2-3 for t
 
 Then follow the next testing steps.
 
-First insert the 74LS0 and verify you have 4Mhz measuring here (you need a frequency-meter or an oscilloscope):
+First insert the 74LS04 and verify you have 4Mhz measuring here (you need a frequency-meter or an oscilloscope):
 ![4Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1133025.jpg)
 Same way you can insert the 74LS74 IC and test you have 1Mhz here:
 ![1Mhz](/cdx-2-iface2.4/pictures/IMG_20230218_1330519.jpg)
